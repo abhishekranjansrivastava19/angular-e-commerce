@@ -1,0 +1,18 @@
+<nav class="nav">
+  <h2><a routerLink="/">Earthly</a></h2>
+
+  <div [ngSwitch]="menuType" >
+    <ul *ngSwitchCase="'default'" >
+      <li><a routerLink="/" >Home</a></li>
+      <li><a routerLink="/shop">shop</a></li>
+      <li><a routerLink="/seller">Contact Us</a></li>
+      <li><a routerLink="/cart-page">Cart({{cartItems}})</a></li>
+    </ul>
+    <ul *ngSwitchCase="'seller'" >
+      <li><a routerLink="/shop">shop</a></li>
+      <li><a (click)="logout()">Logout</a></li>
+      <li><a routerLink="/cart-page">Cart({{cartItems}})</a></li>
+      <li><a routerLink="/seller-profile">{{sellerName | titlecase}}</a></li>
+    </ul>
+  </div>
+</nav>

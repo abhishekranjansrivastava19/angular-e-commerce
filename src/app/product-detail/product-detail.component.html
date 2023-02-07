@@ -1,0 +1,97 @@
+<h2>{{ product.name }}</h2>
+
+<!-- product-detail-start -->
+
+<div class="container">
+
+  <!-- description-start -->
+
+  <div class="row">
+    <div class="col-md-8">
+      <h3>Desrcription :</h3>
+      <p>{{ product.description }}</p>
+    </div>
+    <div class="col-6 col-md-4">
+      <img class="image1" src="{{ product.image }}" alt="" />
+    </div>
+  </div>
+
+  <!-- description-end -->
+
+ <!-- feature-start -->
+
+  <div class="row">
+    <div class="col-6 col-md-4">
+      <img class="image2" src="{{ product.image }}" alt="" />
+    </div>
+    <div class="col-md-8">
+      <h3>Features :</h3>
+      <ul>
+        <li>{{ product.features }}</li>
+      </ul>
+    </div>
+  </div>
+
+<!-- feature-end -->
+
+
+
+  <div class="row" *ngIf="product.usageGuide">
+    <div class="col-md-8">
+      <h3>Usage Guide :</h3>
+      <ul>
+        <li>
+          {{product.usageGuide}}
+        </li>
+      </ul>
+    </div>
+    <div class="col-6 col-md-4">
+      <img class="image1" src="{{ product.image }}" alt="" />
+    </div>
+  </div>
+  <div *ngIf="product.careGuide">
+    <h3>Care Guide :</h3>
+    <p>{{ product.careGuide }}</p>
+  </div>
+  <h3 class="price">Price
+    <span>{{ product.price }}</span>
+  </h3>
+  <h5 class="sizes" *ngIf="product.size">
+    Sizes
+    <select>
+      <option value="">Size</option>
+      <option value="">360 ml</option>
+      <option value="">475 ml</option>
+    </select>
+  </h5>
+  <h5 class="set" *ngIf="product.Set">
+    Set
+    <select>
+      <option value="">Set</option>
+      <option value="">4</option>
+      <option value="">10</option>
+      <option value="">20</option>
+    </select>
+  </h5>
+
+  <div class="quantity-group" *ngIf="product.quantity">
+    <button class="plus" (click)="HandleQuantity('min')">-
+    </button>
+    <input type="text" value="{{ProductQuantity}}">
+    <button class="minus" (click)="HandleQuantity('plus')">+
+    </button>
+  </div>
+
+  <div class="action">
+    <button class="add-to-cart btn btn-default" type="button">
+      Buy Now
+    </button>
+    <button *ngIf="!removeCart" class="buy-now btn btn-default" type="button" (click)="AddToCart()">
+      Add To Cart
+    </button>
+    <button *ngIf="removeCart" class="buy-now btn btn-default" type="button" (click)="RemoveToCart(product._id)">
+      Remove To Cart
+    </button>
+  </div>
+</div>
+

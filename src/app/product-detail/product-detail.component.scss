@@ -1,0 +1,165 @@
+.container{
+  margin-top: 30px;
+  background-color: rgba(11, 23, 159, 0.579);
+  padding-bottom: 23px;
+  // background-image: url('https://images.pexels.com/photos/593159/pexels-photo-593159.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load');
+// background-repeat: no-repeat;
+}
+h2{
+  text-align: center;
+  font-weight: 700;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: 30px;
+  color: rgb(29, 10, 206);
+}
+ul li{
+  margin-top: 30px;
+  margin-left: 10px;
+  color: #fff;
+  font-weight: 500;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+p{
+  margin-top: 30px;
+  margin-left: 10px;
+  color: #fff;
+  font-weight: 500;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h3{
+  margin-top: 30px;
+  font-weight: 700;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  text-decoration: underline;
+  color: black;
+}
+.image1{
+   width: 400px;
+   height: 300px;
+   margin-top: 20px;
+   margin-right: 20px;
+}
+.image2{
+  width: 400px;
+  height: 300px;
+  margin-left: -40px;
+}
+.image3{
+  width: 400px;
+  height: 300px;
+  margin-left: -40px;
+}
+
+
+.price,
+.sizes {
+  margin-bottom: 15px;
+  text-align: center;
+  padding: 5px;
+  margin-right: 40px;
+  font-weight: 700;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+}
+
+.size {
+  margin-right: 10px;
+  padding-bottom: 25px;
+}
+.set{
+text-align: center;
+  padding-bottom: 45px;
+  color: black;
+  margin-right: 50px;
+  font-weight: 700;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.size:first-of-type {
+  margin-left: 30px;
+}
+
+.add-to-cart {
+  background: #ff9f1a;
+  padding: 1.2em 1.5em;
+  margin-right: 28px;
+  margin-left: 5px;
+  border: none;
+  text-transform: UPPERCASE;
+  font-weight: bold;
+  color: #fff;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+.buy-now{
+  background: #ff9f1a;
+  padding: 18px 10px;
+  margin-left: 30px;
+  margin-right: 20px;
+  border: none;
+  text-transform: UPPERCASE;
+  font-weight: bold;
+  color: #fff;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+.add-to-cart:hover,
+.like:hover {
+  background: #b36800;
+  color: #fff;
+}
+.buy-now:hover{
+  background: #b36800;
+  color: #fff;
+}
+.tooltip-inner {
+  padding: 1.3em; }
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(3);
+    transform: scale(3);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(3);
+    transform: scale(3);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.action{
+  text-align: center;
+}
+.quantity-group{
+  text-align: center;
+  margin-bottom: 10px;
+  margin-right: 1%;
+}
+.quantity-group button{
+  margin-bottom: 8px;
+  background-color: #ff9f1a;
+}
+.quantity-group input{
+  width: 40px;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
